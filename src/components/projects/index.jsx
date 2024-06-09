@@ -39,7 +39,7 @@ const Projects = () => {
         <ProjectsTitle>Projects</ProjectsTitle>
         <Row>
           {projectList.map((project, index) => (
-            <Col md={6} lg={4} key={index}>
+            <Col md={6} lg={4} key={index} className="mb-4">
               <ProjectCard>
                 <Card.Img variant="top" src={project.image} />
                 <ProjectCardBody>

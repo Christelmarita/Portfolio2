@@ -23,6 +23,7 @@ export const HeroSection = styled.div`
   background-color: #2c282f;
   padding: 100px 0;
   text-align: center;
+  overflow: hidden;
 `;
 
 export const HeroTitle = styled.h1`
@@ -36,6 +37,11 @@ export const HeroTitle = styled.h1`
   span {
     animation: ${waveAnimation} 2s infinite;
     animation-delay: calc(var(--word-index) * 0.3s);
+  }
+
+
+  @media (max-width: 768px) {
+    font-size: 2rem;  
   }
 `;
 

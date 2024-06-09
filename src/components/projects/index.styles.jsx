@@ -15,7 +15,7 @@ export const ProjectCard = styled(Card)`
   margin-bottom: 20px;
   border-radius: 0px;
   border: 1px solid;
-  height: 100%; // Set height to 100% for flexbox alignment
+  height: 100%; 
   display: flex;
   flex-direction: column;
 `;
