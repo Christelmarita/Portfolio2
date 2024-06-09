@@ -31,10 +31,10 @@ const About = () => {
               </AboutText>
               <IconWrapper>
                 You can find me on:
-                <IconLink href="https://github.com/" target="_blank">
+                <IconLink href="https://github.com/Christelmarita" target="_blank">
                   <i className="devicon-github-original"></i> github
                 </IconLink>
-                <IconLink href="https://linkedin.com/" target="_blank">
+                <IconLink href="https://www.linkedin.com/in/christelosterboe/" target="_blank">
                   <i className="devicon-linkedin-plain"></i> linkedin
                 </IconLink>
               </IconWrapper>
