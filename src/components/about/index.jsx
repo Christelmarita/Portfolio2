@@ -18,7 +18,7 @@ const About = () => {
             </Col>
             <Col className="d-flex flex-column justify-content-end">
             <AboutText>
-            <strong>Hi! I´m Christel. I am a UI Designer and Junior Front End Developer from Norway, who recently graduated from Noroff School of Digital Media.</strong>
+            <strong>Hi! I´m Christel. I am a UI Designer and Junior Front End Developer from Norway, who recently graduated from Noroff School of Technology and Digital Media.</strong>
             </AboutText>
             </Col>
           </Row>
