@@ -19,7 +19,7 @@ const Projects = () => {
       title: "Native Woodland Trust",
       description: "School Project. Brief said to design a new brand identity, logo and app for Native Woodland Trust. All designs are created and prototyped in Xd by me.",
       image: nwtImage,
-      link: "https://xd.adobe.com/view/668b28d5-ec02-4c65-b632-8748f3d2bc64-33d8/",
+      link: "https://xd.adobe.com/view/1fce32c4-7c29-42ff-b81e-326eab92c6cd-4a9d/?fullscreen&hints=off",
       technologies: ["Adobe Xd"]
     },
     {
