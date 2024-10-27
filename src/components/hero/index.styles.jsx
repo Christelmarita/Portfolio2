@@ -2,26 +2,26 @@ import styled, { keyframes } from 'styled-components';
 
 const waveAnimation = keyframes`
   0% {
-    color: #fff;
+    color: #4A4A4A;
   }
   40% {
-    color: #fff;
+    color: #4A4A4A;
   }
   50% {
-    color: #eee82c;
+    color: #578879;
   }
   60% {
-    color: #fff;
+    color: #4A4A4A;
   }
   100% {
-    color: #fff;
+    color: #4A4A4A;
   }
 `;
 
 export const HeroSection = styled.div`
-  margin-top: 80px;
-  background-color: #2c282f;
-  padding: 100px 0;
+  margin-top: 70px;
+  background-color: #fff;
+  padding: 70px 0;
   text-align: center;
   overflow: hidden;
 `;
@@ -29,7 +29,7 @@ export const HeroSection = styled.div`
 export const HeroTitle = styled.h1`
   font-size: 3rem;
   font-weight: bold;
-  color: #fff;
+  color: #4A4A4A;
   display: inline-block;
   animation: ${waveAnimation} 3s infinite;
   display: block;
@@ -48,5 +48,5 @@ export const HeroTitle = styled.h1`
 export const HeroSubtitle = styled.p`
   font-size: 1.25rem;
   margin: 20px 0;
-  color: #fff;
+  color: #4A4A4A;
 `;

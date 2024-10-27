@@ -20,7 +20,7 @@ const Hero = () => {
           FROM IDEAS TO DIGITAL EXPERIENCES
         </HeroTitle>
         <HeroSubtitle>
-          Portfolio for UI Designer and Front End Developer Christel Østerbøe aka OniboDesign
+          Portfolio for UI Designer and Front End Developer Christel Østerbøe
         </HeroSubtitle>
       </Container>
     </HeroSection>

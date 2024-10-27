@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const AboutSection = styled.section`
   padding: 30px 1rem;
   padding-bottom: 70px;
-  background-color: #ffeef2;
+  margin-top: 20px;
 `;
 
 export const AboutImage = styled.img`
@@ -24,9 +24,8 @@ export const AboutBody = styled.div`
 export const AboutListContainer = styled.div`
   background-color: #fff; 
   padding: 20px;
-  margin-top: 20px;
   margin-bottom: 20px;
-  border: 1px solid;
+  border: none;
 `;
 
 export const AboutListTitle = styled.h4`
@@ -47,4 +46,5 @@ export const IconLink = styled.a`
   margin: 20px;
   color: #2c282f;
   text-decoration: none;
+  cursor: pointer;
 `;

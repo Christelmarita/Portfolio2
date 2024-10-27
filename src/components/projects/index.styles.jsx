@@ -13,8 +13,8 @@ export const ProjectsTitle = styled.h2`
 
 export const ProjectCard = styled(Card)`
   margin-bottom: 20px;
-  border-radius: 0px;
-  border: 1px solid;
+  border-radius: 8px;
+  border: none;
   height: 100%; 
   display: flex;
   flex-direction: column;
@@ -38,12 +38,14 @@ export const ProjectCardText = styled(Card.Text)`
 `;
 
 export const ProjectButton = styled(Button)`
-  background-color: #EC95D9;
+  background-color: #E5CDE6;
   color: #2c282f;
   margin: 20px 20px 20px 0px;
   font-family: 'Archivo Black', sans-serif;
+  text-transform: lowercase;
   border-style: none;
   border-radius: 0px;
+  cursor: pointer;
   &:hover {
     background-color: #2c282f;
   }
@@ -51,7 +53,7 @@ export const ProjectButton = styled(Button)`
   ${props =>
     props.id === 'button2' &&
     css`
-      background-color: #eee82c;
+      background-color: #a1c7bb;
     `}
 `;
 

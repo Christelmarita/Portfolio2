@@ -5,20 +5,12 @@ export const NavbarCustom = styled(Navbar)`
   background-color: #fff;
   padding: 1rem;
   width: 100%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-`;
+  transition: box-shadow 0.3s ease-in-out;
 
-export const NavbarBrand = styled.div`
-  font-size: 2rem;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-
-  &:hover {
-    color: #344e41;
-    text-decoration: none;
-  }
+  ${({ isScrolled }) =>
+    isScrolled
+      ? 'box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);'
+      : 'box-shadow: none;'}
 `;
 
 export const NavLink = styled(Nav.Link)`
@@ -27,6 +19,8 @@ export const NavLink = styled(Nav.Link)`
   margin-left: 1rem;
   color: #2c282f;
   overflow: hidden;
+  text-transform: lowercase;
+  cursor: pointer;
 
   &:hover {
   }
@@ -38,7 +32,7 @@ export const NavLink = styled(Nav.Link)`
     bottom: -100%;
     width: 100%;
     height: 100%;
-    background-color: #EC95D9;
+    background-color: #a1c7bb;
     z-index: -1;
     transition: bottom 0.3s ease-in-out;
   }
@@ -48,6 +42,19 @@ export const NavLink = styled(Nav.Link)`
   }
 `;
 
+export const NavbarBrand = styled.div`
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  text-transform: titlecase;
+  cursor: pointer;
+
+  &:hover {
+    color: #614562;
+    text-decoration: none;
+  }
+`;
 
 export const NavCollapse = styled(Navbar.Collapse)`
   @media (max-width: 991px) {

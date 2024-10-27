@@ -1,9 +1,24 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link as ScrollLink } from 'react-scroll';
 import { NavbarCustom, NavbarBrand, NavLink, NavCollapse } from './index.styles';
 
 const CustomNavbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      setIsScrolled(scrollPosition > 0); 
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   const handleNavLinkClick = (sectionId) => {
     const element = document.getElementById(sectionId);
     const offset = element.offsetTop - document.querySelector('nav').offsetHeight;
@@ -11,11 +26,11 @@ const CustomNavbar = () => {
   };
 
   return (
-    <NavbarCustom expand="lg" fixed="top">
+    <NavbarCustom expand="lg" fixed="top" isScrolled={isScrolled}>
       <Container>
         <Navbar.Brand>
           <NavbarBrand href="#">
-            <ScrollLink to="home" smooth={true} duration={500}>onibodesign</ScrollLink>
+            <ScrollLink to="home" smooth={true} duration={500}>Øbøe</ScrollLink>
           </NavbarBrand>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

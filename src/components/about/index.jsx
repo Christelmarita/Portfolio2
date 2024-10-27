@@ -1,21 +1,15 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { AboutSection, AboutImage, AboutText, AboutBody, AboutListContainer, AboutListTitle, AboutListItem, IconWrapper, IconLink } from './index.styles';
-import profileImage from '../../img/profile-img.png';
+import { AboutSection, AboutText, AboutBody, AboutListContainer, AboutListTitle, AboutListItem, IconWrapper, IconLink } from './index.styles';
+
 
 const About = () => {
   return (
     <AboutSection id="about">
       <Container>
         <Row>
-
-        </Row>
-        <Row>
           <Col md={6}>
           <Row className="text-left d-flex align-items-end">
-          <Col md="auto">
-            <AboutImage src={profileImage} alt="Profile" />
-            </Col>
             <Col className="d-flex flex-column justify-content-end">
             <AboutText>
             <strong>Hi! I´m Christel. I am a UI Designer and Junior Front End Developer from Norway, who recently graduated from Noroff School of Technology and Digital Media.</strong>

@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <FooterSection>
       <Container>
-        <FooterText>&copy; {new Date().getFullYear()} OniboDesign. All Rights Reserved.</FooterText>
+        <FooterText>&copy; {new Date().getFullYear()} Øbøe. All Rights Reserved.</FooterText>
         <FooterText>
           <FooterLink href="https://github.com/Christelmarita" target="_blank" rel="noopener noreferrer">
             GitHub

@@ -19,7 +19,7 @@ export const SkillItem = styled.div`
 export const SkillIcon = styled.i`
   font-size: 2rem;
   margin-bottom: 10px;
-  color: #143d29;
+  color: #614562;
 `;
 
 export const SkillText = styled.p`
