@@ -35,13 +35,6 @@ const About = () => {
               </Col>
               <Col md={12}>
                 <AboutListContainer>
-                  <AboutListTitle>Professional Experience:</AboutListTitle>
-                  <AboutListItem>Managing retail and hospitality operations</AboutListItem>
-                  <AboutListItem>Social media work and marketing</AboutListItem>
-                </AboutListContainer>
-              </Col>
-              <Col md={12}>
-                <AboutListContainer>
                   <AboutListTitle>Strengths:</AboutListTitle>
                   <AboutListItem>Strong organizational skills</AboutListItem>
                   <AboutListItem>Keen eye for detail</AboutListItem>
