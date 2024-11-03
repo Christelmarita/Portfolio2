@@ -14,31 +14,18 @@ export const NavbarCustom = styled(Navbar)`
 `;
 
 export const NavLink = styled(Nav.Link)`
-  position: relative;
   font-size: 1rem;
   margin-left: 1rem;
+  margin-top: 3%;
   color: #2c282f;
-  overflow: hidden;
   text-transform: lowercase;
   cursor: pointer;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.1s ease-in-out;
 
   &:hover {
-  }
-
-  &::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -100%;
-    width: 100%;
-    height: 100%;
-    background-color: #a1c7bb;
-    z-index: -1;
-    transition: bottom 0.3s ease-in-out;
-  }
-
-  &:hover::before {
-    bottom: 0;
+    border-bottom-color: #a1c7bb; 
   }
 `;
 

@@ -5,6 +5,7 @@ import { NavbarCustom, NavbarBrand, NavLink, NavCollapse } from './index.styles'
 
 const CustomNavbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,7 +24,10 @@ const CustomNavbar = () => {
     const element = document.getElementById(sectionId);
     const offset = element.offsetTop - document.querySelector('nav').offsetHeight;
     window.scrollTo({ top: offset, behavior: 'smooth' });
+    setIsMenuOpen(false);
   };
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
     <NavbarCustom expand="lg" fixed="top" isScrolled={isScrolled}>
@@ -33,8 +37,11 @@ const CustomNavbar = () => {
             <ScrollLink to="home" smooth={true} duration={500}>Øbøe</ScrollLink>
           </NavbarBrand>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <NavCollapse id="basic-navbar-nav">
+        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleMenu}>
+          {isMenuOpen ? '✕' : '☰'}
+        </Navbar.Toggle>
+
+        <NavCollapse id="basic-navbar-nav" in={isMenuOpen}>
           <Nav className="ms-auto">
             <NavLink onClick={() => handleNavLinkClick('home')}>Home</NavLink>
             <NavLink onClick={() => handleNavLinkClick('about')}>About</NavLink>
