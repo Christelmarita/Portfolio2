@@ -17,7 +17,7 @@ const About = () => {
             </Col>
           </Row>
             <AboutText>
-              My passion lies in creating accessible design and seamless user stories. I believe that technology should be inclusive, enabling everyone to have a great user experience regardless of their abilities. I strive to break down barriers and ensure that my designs are not only visually appealing but also user-friendly and accessible to all.
+              I'm passionate about creating designs that are easy to use and accessible to everyone. I believe technology should work for all people, regardless of their abilities. I focus on making user experiences smooth and ensuring my designs look good while being user-friendly for everyone.
             </AboutText>
             <AboutBody>
               <AboutText>
