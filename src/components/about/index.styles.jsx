@@ -16,11 +16,6 @@ export const AboutText = styled.p`
   line-height: 1.6;
 `;
 
-export const AboutBody = styled.div`
-  text-align: left;
-  padding-top: 30px;
-`;
-
 export const AboutListContainer = styled.div`
   background-color: #fff; 
   padding: 20px;
@@ -38,13 +33,4 @@ export const AboutListItem = styled.p`
   margin: 5px 0;
 `;
 
-export const IconWrapper = styled.div`
-  margin-top: 20px;
-`;
 
-export const IconLink = styled.a`
-  margin: 20px;
-  color: #2c282f;
-  text-decoration: none;
-  cursor: pointer;
-`;
