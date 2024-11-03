@@ -12,12 +12,16 @@ const About = () => {
           <Row className="text-left d-flex align-items-end">
             <Col className="d-flex flex-column justify-content-end">
             <AboutText>
-            <strong>Hi! I´m Christel. I am a UI Designer and Junior Front End Developer from Norway, who recently graduated from Noroff School of Technology and Digital Media.</strong>
+            <strong>Hi! I´m Christel. I am a UI Designer and Front End Developer from Norway, who recently graduated from Noroff School of Technology and Digital Media.</strong>
             </AboutText>
             </Col>
           </Row>
             <AboutText>
+<<<<<<< HEAD
             I'm passionate about creating designs that are easy to use and accessible to everyone. I believe technology should work for all people, regardless of their abilities. I focus on making user experiences smooth and ensuring my designs look good while being user-friendly for everyone.
+=======
+              I'm passionate about creating designs that are easy to use and accessible to everyone. I believe technology should work for all people, regardless of their abilities. I focus on making user experiences smooth and ensuring my designs look good while being user-friendly for everyone.
+>>>>>>> ef88a7ec3ac52e286a0947cd7f10975e4915ee5e
             </AboutText>
             <AboutText>
                 I am excited about the opportunity to combine my design skills, technical knowledge, and diverse professional experience to create digital experiences that make a positive impact. Let's connect and explore how we can work together to bring innovative and accessible solutions to life.

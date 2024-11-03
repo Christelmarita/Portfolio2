@@ -9,7 +9,7 @@ const Projects = () => {
   const projectList = [
     {
       title: "Scandi Gazette",
-      description: "School Project. The brief was to design and develop a blog site, fetching posts from WordPress using and api call. All design is created by me.",
+      description: "School Project. The brief was to design and develop a blog site, fetching posts from WordPress using an api call. All design is created by me.",
       image: scandiImage,
       link: "https://subtle-cendol-bcdb2f.netlify.app/",
       github: "https://github.com/Noroff-FEU-Assignments/project-exam-1-Christelmarita",
